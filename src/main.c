@@ -8,8 +8,15 @@ int max(int a , int b){
    return b ; 
 }
 
+
 int round (double a){
-  return (int) a; 
+  return (int) a;} 
+  
+int abs(int a){
+  if(a < 0) 
+   return a * -1; 
+   
+   else a ; 
 }
 
 int main(void)
@@ -18,8 +25,9 @@ int main(void)
 	int y = 100; 
 	printf("square root of(%d+%d) = %d",x,y,sqrt(x+y)); 
 	printf("Learning Branching Strategy\n"); 
-        printf("%d",round(90.2)); 
-	
+  printf("%d",round(90.2));
+	printf("%d",abs(-80)); 
+
 	
 	// get max 
 	printf("%d",max(20,60)); 
